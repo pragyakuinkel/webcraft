@@ -50,34 +50,28 @@
 		.highlights-h1-tag {
 			text-align: center;
 		}
-		.section-3-list {
-			display: flex;
-		}
-		.work-odd, .work-even {
-			padding-left: 50px;
-			padding-right: 50px;
-			padding-top: 20px;
-			padding-bottom: 20px;
-			width: 220px;
-			text-align: center;
-		}
 		.work-odd {
 			background-color: #17b794;
 		}
 		.work-even {
 			background-color: #04dead;
 		}
-		.work-h3, .work-h5 {
-			padding: 0;
-			margin: 10px;
-			color: white;
-			font-weight: bold;
-		}
 		.work-h3 {
 			font-size: 50px;
 		}
 		.work-h5 {
 			font-size: 20px;
+		}
+		.section-3-list {
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+			border: none;
+		}
+			.work-even, .work-odd {
+			padding: 20px;
+			font-size: 30px;
+			text-align: center;
+			border: none;
 		}
 
 	</style>
@@ -184,8 +178,6 @@
 				<h3 class="work-h3">12000+</h3>
 				<h5 class="work-h5">Education Provided</h5>
 			</li>
-		</ul>
-		<ul class="section-3-list">
 			<li class="work-even">
 				<h3 class="work-h3">27</h3>
 				<h5 class="work-h5">Awareness Program Conducted</h5>
