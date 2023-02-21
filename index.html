@@ -5,37 +5,207 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Our Website</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="style.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--- internal css starts here -->
+	<style type="text/css">
+		.section-1 {
+			display: flex;
+			padding: 50px;
+			background-color: #c5e5e3;
+		}
+		.section-2 {
+			padding: 50px;
+		}
+		.left-div{
+			float: left;
+			margin: 50px;
+			display: inline-block;
+		}
+		.right-div{
+			float: right;
+			margin: 50px;
+			display: inline-block;
+		}
+		.carousel-top-index {
+			float: right;
+			width: 600 px;
+			height: auto;
+		}
+		.h1-tag {
+			font-size: 48px;
+		}
+		.p-tag {
+			font-size: 28px;
+		}
+		.highlights-events {
+			display: flex;
+		}
+		.highlights-events-list {
+			margin: 50px;
+		}
+		.highlights-events-img {
+			width: 300px;
+			height: auto;
+		}
+		.highlights-h1-tag {
+			text-align: center;
+		}
+		.section-3-list {
+			display: flex;
+		}
+		.work-odd, .work-even {
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			width: 220px;
+			text-align: center;
+		}
+		.work-odd {
+			background-color: #17b794;
+		}
+		.work-even {
+			background-color: #04dead;
+		}
+		.work-h3, .work-h5 {
+			padding: 0;
+			margin: 10px;
+			color: white;
+			font-weight: bold;
+		}
+		.work-h3 {
+			font-size: 50px;
+		}
+		.work-h5 {
+			font-size: 20px;
+		}
+
+	</style>
 </head>
 <body>
 	<header>
 		<ul class="nav-sec">
 			<li class="logo">logo</li>
 			<li class="nav-bar">
-				
+				<nav>
 					<ul>
-					<nav>
-						<li class="nav-menu"><a href="index.html">Home</a></li>
-						<li class="nav-menu"><a href="about.html">About</a></li>
-						<li class="nav-menu"><a href="contact.html">Contact</a></li>	
-						<li class="nav-menu"><a href="support.html">Support</a></li>
-						<li class="nav-menu"><a href="events.html">Events</a></li>
-						<li class="nav-menu"><a href="news.html">News</a></li>	
-						</nav>	
+						<li class="nav-menu">
+							<a class="nav-a" href="index.html">Home</a>
+						</li>
+						<li class="nav-menu">
+							<a class="nav-a" href="about.html">About</a>
+						</li>
+						<li class="nav-menu">
+							<a class="nav-a" href="contact.html">Contact</a>
+						</li>	
+						<li class="support">
+							<a class="nav-a" href="support.html">Support</a>
+							<ul class="drop-down">
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+							</ul>
+						</li>
+						<li class="nav-menu">
+							<a class="nav-a" href="events.html">Events</a>
+						</li>
+						<li class="nav-menu">
+							<a class="nav-a" href="news.html">News</a>
+						</li>	
 					</ul>
-					
+				</nav>
 			</li>
 		</ul>
 	</header>
-	<section>
-		<div>
-			<h1>We stand together for child right</h1>
-			<p>This is paragraph</p>
+	<section class="section-1">
+		<div class="left-div">
+			<h1 class="h1-tag">We stand together for child right</h1>
+			<p class="p-tag">Your small support can make big changes in children life.</p>
 			<button class="donate-button" type="submit">Donate</button>
+			<a href="index.html" class="hotline-number">1111</a>
 		</div>
-		<div>
+		<div class="right-div">
 			<img class="carousel-top-index" src="street-children.jpg"/>
 		</div>
+	</section>
+	<section class="section-2" style="background-color: #e7eaf6;">
+		<h1 class="highlights-heading-tag" style="font-size: 48px; text-align: center;">Highlights</h1>
+		<div>
+			<h1 style="text-align: center; font-size: 28px;">On Going Events</h1>
+			<ul class="highlights-events">
+				<li class="highlights-events-list">
+					<img class="highlights-events-img" src="street-children.jpg"/>
+					<h1 class="highlights-h1-tag">Door to Door Awareness Program</h1>
+				</li>
+				<li class="highlights-events-list">
+					<img class="highlights-events-img" src="street-children.jpg"/>
+					<h1 class="highlights-h1-tag">Speech Contest About Child Trafficking</h1>
+				</li>
+				<li class="highlights-events-list">
+					<img class="highlights-events-img" src="street-children.jpg"/>
+					<h1 class="highlights-h1-tag">Door to Door Awareness Program</h1>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<h1 style="text-align: center; font-size: 28px;">Up Coming Events</h1>
+			<ul class="highlights-events">
+				<li class="highlights-events-list">
+					<img class="highlights-events-img" src="street-children.jpg"/>
+					<h1 class="highlights-h1-tag">Door to Door Awareness Program</h1>
+				</li>
+				<li class="highlights-events-list">
+					<img class="highlights-events-img" src="street-children.jpg"/>
+					<h1 class="highlights-h1-tag">Speech Contest About Child Trafficking</h1>
+				</li>
+				<li class="highlights-events-list">
+					<img class="highlights-events-img" src="street-children.jpg"/>
+					<h1 class="highlights-h1-tag">Door to Door Awareness Program</h1>
+				</li>
+			</ul>			
+		</div>
+	</section>
+	<section class="section-3">
+		<ul class="section-3-list">
+			<li class="work-odd">
+				<h3 class="work-h3">729</h3>
+				<h5 class="work-h5">Children Rescued</h5>
+			</li>
+			<li class="work-even">
+				<h3 class="work-h3">629</h3>
+				<h5 class="work-h5">Sent Back to Parents</h5>
+			</li>
+			<li class="work-odd">
+				<h3 class="work-h3">100</h3>
+				<h5 class="work-h5">Accomodation Provided</h5>
+			</li>
+			<li class="work-even">
+				<h3 class="work-h3">12000+</h3>
+				<h5 class="work-h5">Education Provided</h5>
+			</li>
+		</ul>
+		<ul class="section-3-list">
+			<li class="work-even">
+				<h3 class="work-h3">27</h3>
+				<h5 class="work-h5">Awareness Program Conducted</h5>
+			</li>
+			<li class="work-odd">
+				<h3 class="work-h3">18</h3>
+				<h5 class="work-h5">Charity Conducted</h5>
+			</li>
+			<li class="work-even">
+				<h3 class="work-h3">2300+</h3>
+				<h5 class="work-h5">Donors</h5>
+			</li>
+			<li class="work-odd">
+				<h3 class="work-h3">22</h3>
+				<h5 class="work-h5">Volunteers</h5>
+			</li>
+		</ul>
+	</section>
+	<section>
+		
 	</section>
 	<footer>
 		<div class="footer">
@@ -43,7 +213,7 @@
 			<p>Please enter your email and click subscribe</p>
 			<div class="newsletter">
 				<input class="text-box" type="email"/>
-				<button class="go-button" type="submit">Go</button>
+				<button class="go-button" type="submit" style="color: white; font-weight: bold; font-size: 24px;"><i class="fa fa-paper-plane-o"></i></button>
 			</div>	
 		</div>
 		<div class="footer">

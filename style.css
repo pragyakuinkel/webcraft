@@ -7,6 +7,8 @@ body {
 header {
 	background-color: #1239;
 	margin: 0;
+	position: sticky;
+	top: 0;
 }
 
 ul {
@@ -27,7 +29,7 @@ ul {
 .nav-bar {
 	float: right;
 }
-.nav-menu{
+.nav-menu, .support{
 	display: inline-block;
 	font-weight: bold;
 	color: white;
@@ -65,11 +67,46 @@ footer {
 .go-button {
 	width: 40px;
 	border: none;
+	background-color: #61d2b4;
 }
-.carousel-top-index {
-	width: 600 px;
-	height: auto;
+.donate-button {
+	width: 200px;
+	height: 50px;
+	background-color: #61d2b4;
+	border-style: none;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
 }
-.index-section1-div {
-	display: flex;
+.hotline-number {
+	font-weight: bold;
+	font-size: 28px;
+	border-style: none;
+}
+
+.nav-a:hover{
+	padding: 24px 50px;
+	background-color: #1329;
+	transition: 0.9s;
+	color: antiquewhite;
+	font-weight: bold;
+}
+.drop-down {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	padding: 40 0px;
+}
+.support: hover {
+	{
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	padding: 40 0px;
+	}
 }
