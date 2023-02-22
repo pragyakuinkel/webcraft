@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Our Website</title>
+	<title>Ninja Rescuers</title>
+	<link rel="icon" type="image/x-icon" href="logo.png">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css"> 
+		html {
+  			scroll-behavior: smooth;
+		}
+	</style>
 </head>
 
 <body>
 	<header>
 		<ul class="nav-sec">
-			<li class="logo">logo</li>
+			<li class="logo">Ninja Rescuers</li>
 			<li class="nav-bar">
 				<nav>
 					<ul>
@@ -34,82 +41,77 @@
 						</li>
 						<li class="nav-menu">
 							<a class="nav-a" href="events.html">Events</a>
-						</li>
-						<li class="nav-menu">
-							<a class="nav-a" href="news.html">News</a>
 						</li>	
 					</ul>
 				</nav>
 			</li>
 		</ul>
 	</header>
-	<section class="suppot-section-1">
-		<div class="support-image-1">
-			<img src="notforsale.jpg" width="150px" height="auto" />
+	<section style="background-color: #dee1ec; padding: 50px;" class="support-section-1">
+			<div class="support-image-1">
+				<img src="street-children.jpg"/>
+			</div>
+			<div class="support-donation">
+				<h3 class="h1-tag" class="support-heading">Stolen children, stolen dreams</h3>
+				<p style="font-size: 28px;" class="p-tag">Your donations can change lives.</p>
+				<h1 style="text-align: center;"><a href="#section2"/><button type="submit" Submit="submit" class="donate-button">DONATE</button></a></h1>
+			</div>
+	</section>
+	<section id="section2" class="support-section-2" style="background-color: #d9dad7; padding: 50px">
+		<h3 class="h1-tag" style="text-align: center;">Payment method</h3>
+		<div class="n-payment-div">
+			<a href="khalti.html"><img class="payment-logo" src="khalti2.png" style="width: 200px; height: auto;"/></a>
+			<a href="https://esewa.com.np/#/home"><img class="payment-logo" src="esewa.png" style="margin-left: 30px;"/></a>
+			<a href="https://play.google.com/store/apps/details?id=com.swifttechnology.imepay"/><img class="payment-logo" src="imepay.png" style="width: 100px; height: auto;"/></a>
 		</div>
-		<div class="support-donation">
-			<h3 class="support-heading">Stolen children, stolen dreams</h3>
-			<p>Your donations can change lives.</p>
-			<button type="submit" Submit="submit">DONATE</button>
+		<div class="i-payment-div">
+			<a href="paypal.html"><img class="payment-logo" src="paypal.png" style="margin-top: 50px;"/></a>
+			<a href="card.html"><img class="payment-logo" src="card.png" style="width: 250px; height: auto; margin-top: 50px; margin-left: 20px;"/></a>
+			<a href="#section3"><img class="payment-logo" src="banktransfer.png" style="width: 100px; height: auto; margin-left: 70px;"/></a>
 		</div>
 	</section>
-	<section class="support-section-2">
-		<h3 class="support-heading">Payment method</h3>
-		<p> Khalti Esewa IME-PAY Paypal Card</p>
-		<p>Bank details</p>
-	</section>
-	<section class="support-section-3">
-		<h3 class="support-heading">Volunteer Registation Form</h3>
-		<form class="volunteer">
-			<label for="First Name">First Name</label>
-			<input type="text" name="First Name" />
-			<label for="Last Name">Last Name</label>
-			<input type="text" name="Last Name" /><br/>
-			<label for="email">Email Address</label>
-			<input type="email" name="email" /><br/>
-			<label for="Address">Address</label>
-			<input type="text" name="Address" /><br/>
-			<label for="Date Of Birth">Date Of Birth</label>
-			<input type="date" name="Date Of Birth" /><br/>
-			<label for="gender">Select Gender</label>
-			<input type="radio" name="gender" value="male">Male</input>
-			<input type="radio" name="gender" value="female">Female</input>
-			<input type="radio" name="gender" value="other">Other</input><br/>
-			<label for="Why do you wanna work with us">Why do you wanna work with us?</label>
-			<input type="text" name="Why do you wanna work with us" /><br/>
-            <button type="submit" Submit="submit">Volunteer Now</button>
-		</form>
-	</section>
-	<section class="support-section-4">
-		<div class="support-top">
-			<h3 class="support-heading">Top Doners</h3>
-			<div class="support-image-2">
-				<img src="jeff.jpg" width="150px" height="auto" />
-				<p class="paragraph-support">Jeff Bezos</p>
-			</div>
-			<div class="support-image-3">
-				<img src="elon.jpg" width="150px" height="auto" />
-				<p class="paragraph-support">Elon Musk</p>
-			</div>
-			<div class="support-image-4">
-				<img src="bill.jpg" width="150px" height="auto" />
-				<p class="paragraph-support">Bill Gates</p>
+	<section id="section3" class="bank-detail-section" style="background-color: #dee1ec; padding: 50px;">
+		<div class="bank-detail-div">
+			<h4 style="font-size: 48px;" class="bank-detail-heading">Bank details</h4>
+			<h5 style="font-size: 30px; margin-left: 10px">Global IME Bank</h5>
+			<h6 style=" margin-left: 10px; margin-top: 0; font-size: 18px;" class="bank">Swift Code:0010</h5>
+			<h6 style=" margin-left: 10px; margin-top: 0; font-size: 18px">Account Name: Recue Armed Force</h5>
+			<h6 style=" margin-left: 10px; margin-top: 0; font-size: 18px">Account Number: 00107080901000007</h5>
+		</div>
+		<div class="scan-code">
+			<div class="phone-draw">
+				<div class="qrcode-div">
+					<img class="qrcode-img" src="qrcode.png"/>
+					<h3 style="text-align: center;">Scan to Pay</h3>
+				</div>
 			</div>
 		</div>
-		<div class="support-top">
-			<h3>Top Volunteers</h3>
-			<div class="support-image-5">
-				<img src="volunteer1.jpg" width="150px" height="auto" />
-				<p class="paragraph-support">Sita Tamang</p>
-			</div>
-			<div class="support-image-6">
-				<img src="volunteer2.jpg" width="150px" height="auto" />
-				<p class="paragraph-support">Ram Bahadur Shrestha</p>
-			</div>
-			<div class="support-image-7">
-				<img src="volunteer3.jpg" width="150px" height="auto" />
-				<p class="paragraph-support">Anil Rai</p>
-			</div>
+	</section>
+	<section style="display: flex; background-color: #eeeeee;" class="support-section-3">
+		<div>
+			<h1 style="margin: 100px; margin-left: 150px; text-align: center;">Contribution can be any,<br/>you can donate us your skill.</h1>
+			<h2 style="margin: 50px; background-color: #dbd8e3; padding: 20px 100px; margin-left: 150px; font-size: 18px; ">You can teach</h2>
+			<h2 style="margin: 50px; background-color: #dbd8e3; padding: 20px 100px; margin-left: 150px; font-size: 18px; ">You can cook</h2>
+			<h2 style="margin: 50px; background-color: #dbd8e3; padding: 20px 100px; margin-left: 150px; font-size: 18px; ">You can play</h2>
+			<h2 style="margin: 50px; background-color: #dbd8e3; padding: 20px 100px; margin-left: 150px; font-size: 18px; ">You can love</h2>
+		</div>
+		<div style="background-color: #b4f1f1; padding-top: 50px; margin: 50px;">
+			<h3 style="text-align: center; font-weight: normal; font-size: 24px;" class="support-heading">Volunteer Registation Form</h3>
+			<form class="volunteer">
+				<div style="display: flex;">
+					<input style=" width: 200px ; height: 30px; padding: 20px font-size: 12px;" class="form-input-box" type="text" name="firstName" placeholder="First Name" /><br/>
+					<input style=" width: 200px ; height: 30px; padding: 20px font-size: 12px;" class="form-input-box" type="text" name="lastName" placeholder="Last Name" /><br/>
+				</div>
+				<input style="width: 440px ; height: 30px; padding: 20px font-size: 12px;" class="form-input-box" type="email" name="email" placeholder="E-mail"/><br/>
+				<input style="width: 440px ; height: 30px; padding: 20px font-size: 12px;" class="form-input-box" type="text" name="address" placeholder="Address"/><br/>
+				<input style="width: 440px ; height: 30px; padding: 20px font-size: 12px;" class="form-input-box" type="date" name="dateOfBirth" placeholder="Date of Birth"/><br/>
+				<label style="margin-left: 20px;">Gender</label><br/>
+				<input style="width: 70px; height: 30px;" class="form-input-box" type="radio" name="gender" value="male">Male</input>
+				<input style="width: 70px; height: 30px;" class="form-input-box" type="radio" name="gender" value="female">Female</input>
+				<input style="width: 70px; height: 30px;" class="form-input-box" type="radio" name="gender" value="other">Other</input><br/>
+				<textarea style="width: 460px ; height: 200px; padding: 20px font-size: 12px;; margin-top: 20px;" class="form-message-box" type="text" name="volunteer-msg-box" /></textarea><br/>
+	            <button style="margin-left: 20px; margin-top: 20px" type="submit" class="donate-button">Volunteer Now</button>
+			</form>
 		</div>
 	</section>
 	<footer>

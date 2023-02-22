@@ -1,0 +1,43 @@
+'use strict';
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+        navigator.serviceWorker.register('./service-worker.js').then(function () {
+            console.log('Successfully registered service worker');
+        }).catch(function () {
+            console.warn('Error whilst registering service worker');
+        });
+    });
+}
+  function requestPermission() {
+    Notification.requestPermission().then((permission) => {
+      if (permission === 'granted') {
+        console.log('Notification permission granted.');
+      } else {
+        console.log('Unable to get permission to notify.');
+      }
+    });
+  }
+  requestPermission();
+
+import {initializeApp} from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js';
+import {getAnalytics, logEvent} from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js';
+import {onMessage} from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-messaging.js';
+
+const firebaseConfig = 'ewogICAgImFwaUtleSI6ICJBSXphU3lCRlVvUXhkOUFESG04WlhZaFBVY2xVQnN5RHBOQ2M3RWciLAogICAgImF1dGhEb21haW4iOiAiZXNld2Etd2ViLmZpcmViYXNlYXBwLmNvbSIsCiAgICAicHJvamVjdElkIjogImVzZXdhLXdlYiIsCiAgICAic3RvcmFnZUJ1Y2tldCI6ICJlc2V3YS13ZWIuYXBwc3BvdC5jb20iLAogICAgIm1lc3NhZ2luZ1NlbmRlcklkIjogIjU0NDMwNjU2MjY2MyIsCiAgICAiYXBwSWQiOiAiMTo1NDQzMDY1NjI2NjM6d2ViOjg5NmY0YjY1MzNjMjM4ZTIzNjM2YzIiLAogICAgIm1lYXN1cmVtZW50SWQiOiAiRy0wNVZYVDRQVlRGIgogIH0=';
+const app = initializeApp(JSON.parse(atob(firebaseConfig)));const analytics = getAnalytics(app);
+onMessage((payload) => {
+    console.log('Message received on message. ', payload);
+    const notificationTitle = payload.notification.title;
+    const notificationOptions = {
+        body: payload.notification.body,
+        icon: payload.notification.icon || 'https://cdn.esewa.com.np/ui/images/pwa-favicons/icons/launcher_img_144x144.png'
+    };
+    self.registration.showNotification(notificationTitle,
+        notificationOptions);
+});
+window.trackLogEvent = function (data) {
+    logEvent(analytics, data.eventType, {
+        eventTitle: data.eventTitle
+    });
+};
+
