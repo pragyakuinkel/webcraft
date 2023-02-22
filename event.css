@@ -1,0 +1,84 @@
+/*.bground{
+    background: rgba(153, 238, 224, 0.7); 
+background-size: cover;
+background-blend-mode: lighten;
+}*/
+.bg-color{
+    background-color: rgb(240, 237, 237);
+}
+.top-content{
+    display: flex;
+   padding: 50px;
+	background-color: rgb(208, 241, 241);
+    margin-bottom: 0px;
+}
+
+.con-div{
+    float: left;
+    margin: 50px;
+	display: inline-block;
+}
+
+.img-div{
+    float: right;
+    margin: 50px;
+    display: inline-block;
+}
+
+.displayimg{
+    float: right;
+	width: 600 px;
+	height: auto;
+}
+.text {
+    height: 30vh;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /*font-weight: 600px;*/
+    font-size: 48px;
+    color: black;
+}
+.main1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ongoingevent{
+    width: 500px;
+    padding: 20px 20px;
+}
+
+.ongoingevent{
+    width: 500px;
+    padding: 20px 20px;
+}
+.event-link{
+    color: rgb(159, 159, 245);
+}
+
+/*we are not using grid because flex is enough*/
+/*
+.third-ongoing-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+.event3-grid {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+*/
