@@ -13,8 +13,10 @@
 			display: flex;
 		}
 		.contact-section-2 {
-			display: flex;
-		}
+            display: grid;
+            grid-template-columns: auto auto;
+            border: none;
+        }
 
 		.address-div, .phone-div, .email-div {
 			display: flex;
@@ -34,7 +36,9 @@
 			margin-right: 30px;
 		}
 		.contact-section-1 {
-			display: flex;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            border: none;
 		}
 		.comtact-img-1 {
 			width: 600px;
@@ -83,7 +87,7 @@
 
 	<section class="contact-section-1">
 			<div style="margin: 50px;">
-				<img class="contact-img-1" src="street-children.jpg"/>
+				<h1 class="center-h1"><img class="contact-img-1" src="street-children.jpg"/></h1>
 			</div>
 			<div class="div-contact-2" style="margin: 50px;">
 				<h3 class="h1-tag"> Contact us</h3>
@@ -123,12 +127,12 @@
 			</div>
 		</div>
 		<div>
-			<form class="contact-form">
+			<form action="mailto:aadarsha.shahi.1000@gmail.com" method="post" enctype="text/plain" class="contact-form">
 				<input class="form-input-box" type="text" name="fullName" placeholder="Enter your fullname" /><br/>
 				<input class="form-input-box" type="text" name="email" placeholder="Enter your Email"><br/>
 				<input class="form-input-box"type="text" name="phoneNumber" placeholder="Enter your phone number"/><br/>
 				<textarea class="form-message-box" type="text" name="message" style="height: 200px;" placeholder="Write your message"></textarea><br/>
-				<button style="width: 200px;"class="submit" name="submit" type="submit">Submit</button>
+				<input style="width: 200px;"class="submit" name="submit" type="submit" value="Submit">
 			</form>
 		</div>
 	</section>

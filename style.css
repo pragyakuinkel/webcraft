@@ -45,14 +45,21 @@ a {
 	height: 400px;
 }
 footer {
-	display: flex;
 	background-color: #233142;
 	color: white;
+	display: grid;
+    grid-template-columns: auto auto auto;
+    border: none;
+    margin: 0;
+    padding: 0 40px;
 }
+
 .footer {
-	margin: 30px;
-	width: 500px;
-	text-align: justify;
+	margin: 50px;
+	width: 300px;
+}
+.footer-right {
+	float: right;
 }
 .newsletter {
 	display: flex;
@@ -69,6 +76,7 @@ footer {
 	border: none;
 	background-color: #61d2b4;
 }
+
 .donate-button, .read-more-button {
 	width: 200px;
 	height: 50px;
@@ -82,8 +90,7 @@ footer {
 	font-weight: bold;
 	font-size: 28px;
 	border-style: none;
-	color: red; 
-	margin-left: 20px;
+	color: red;
 }
 
 .nav-a:hover{
@@ -93,14 +100,13 @@ footer {
 	color: antiquewhite;
 	font-weight: bold;
 }
-.donate-button:hover, .read-more-button:hover, .objective:hover, .submit:hover{
-	padding: 24px 50px;
+.donate-button:hover, .read-more-button:hover, .objective:hover, .submit:hover, .go-button:hover{
 	background-color: #42b883;
 	transition: 0.9s;
 	color: antiquewhite;
 	font-weight: bold;
 	}
-.read-more-button:hover {}
+
 .drop-down {
 	display: none;
 	position: absolute;
@@ -168,14 +174,17 @@ footer {
 		}
 
 		/* Flex all */
-		.support-section-1, .n-payment-div .i-payment-div, .bank-detail-section{
-			display: flex;
+		.n-payment-div .i-payment-div{
+	        display: grid;
+            grid-template-columns: auto auto auto;
+            border: none;
 		}
-		.payment-logo {
+		.payment-logo, .payment-logo-1 {
 			width: 200px;
 			height: auto;
-			margin: 50px 100px;
+			margin: 50px;
 		}
+
 		.qrcode-img {
 			width: 200px;
 			height: auto;
@@ -217,3 +226,34 @@ footer {
 .slideshow img:not(.active) {
   display: none;
 }
+.center-h1 {
+	text-align: center;
+}
+.move{
+			display: grid;
+			justify-content: center;
+			align-items: center;
+		}
+		.about-section-3{
+			align-items: center;
+	
+			justify-content: center;
+		}
+		.about-section-1{
+			align-items: center;
+			display: flex;
+			justify-content: center;
+		}
+		.about-section-2{
+			align-items: center;
+			display: flex;
+			justify-content: center;
+		}
+		.objective-div{
+			align-items: center;
+			
+			justify-content: center;
+		}
+		.con-div, img.div {
+			margin: 50px;
+		}
