@@ -94,7 +94,6 @@ footer {
 	font-weight: bold;
 }
 .donate-button:hover, .read-more-button:hover, .objective:hover, .submit:hover{
-	padding: 24px 50px;
 	background-color: #42b883;
 	transition: 0.9s;
 	color: antiquewhite;
