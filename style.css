@@ -45,21 +45,14 @@ a {
 	height: 400px;
 }
 footer {
+	display: flex;
 	background-color: #233142;
 	color: white;
-	display: grid;
-    grid-template-columns: auto auto auto;
-    border: none;
-    margin: 0;
-    padding: 0 40px;
 }
-
 .footer {
-	margin: 50px;
-	width: 300px;
-}
-.footer-right {
-	float: right;
+	margin: 30px;
+	width: 500px;
+	text-align: justify;
 }
 .newsletter {
 	display: flex;
@@ -76,7 +69,6 @@ footer {
 	border: none;
 	background-color: #61d2b4;
 }
-
 .donate-button, .read-more-button {
 	width: 200px;
 	height: 50px;
@@ -90,7 +82,8 @@ footer {
 	font-weight: bold;
 	font-size: 28px;
 	border-style: none;
-	color: red;
+	color: red; 
+	margin-left: 20px;
 }
 
 .nav-a:hover{
@@ -100,13 +93,14 @@ footer {
 	color: antiquewhite;
 	font-weight: bold;
 }
-.donate-button:hover, .read-more-button:hover, .objective:hover, .submit:hover, .go-button:hover{
+.donate-button:hover, .read-more-button:hover, .objective:hover, .submit:hover{
+	padding: 24px 50px;
 	background-color: #42b883;
 	transition: 0.9s;
 	color: antiquewhite;
 	font-weight: bold;
 	}
-
+.read-more-button:hover {}
 .drop-down {
 	display: none;
 	position: absolute;
@@ -174,17 +168,14 @@ footer {
 		}
 
 		/* Flex all */
-		.n-payment-div .i-payment-div{
-	        display: grid;
-            grid-template-columns: auto auto auto;
-            border: none;
+		.support-section-1, .n-payment-div .i-payment-div, .bank-detail-section{
+			display: flex;
 		}
-		.payment-logo, .payment-logo-1 {
+		.payment-logo {
 			width: 200px;
 			height: auto;
-			margin: 50px;
+			margin: 50px 100px;
 		}
-
 		.qrcode-img {
 			width: 200px;
 			height: auto;
@@ -202,14 +193,14 @@ footer {
 			margin: 50px 200px;
 		}
 		#arrow{
-	
+	display:flex;
+	justify-content: center;
 	color: black;
-	text-align: center;
 	position:absolute;
 	width:2rem;
 	height: 2rem;
 	color: black;
-	margin-top:-8rem;
+	margin-top:-12rem;
 	margin-left: 300px;
 	background-color: white;
 	border-radius:60px;
@@ -223,37 +214,146 @@ footer {
 #arrow:hover{
 	background-color:green;
 }
-.slideshow img:not(.active) {
+	#arrow2{
+	display:flex;
+	justify-content: center;
+	color: black;
+	position:absolute;
+	width:2rem;
+	height: 2rem;
+	color: black;
+	margin-top:-12rem;
+	margin-left: 300px;
+	background-color: white;
+	border-radius:60px;
+	text-align: center;
+	opacity:0.8;
+	cursor: pointer;
+	
+	
+}
+
+#arrow2:hover{
+	background-color:green;
+}
+.highlights-events img:not(.highlights-events-img) {
   display: none;
 }
-.center-h1 {
-	text-align: center;
-}
-.move{
-			display: grid;
-			justify-content: center;
-			align-items: center;
-		}
-		.about-section-3{
-			align-items: center;
+
+/*.highlights-events img:not(.highlights-h1-tag) {
+  display: none;
+}*/
+.highlights-events{
 	
-			justify-content: center;
-		}
-		.about-section-1{
-			align-items: center;
-			display: flex;
-			justify-content: center;
-		}
-		.about-section-2{
-			align-items: center;
-			display: flex;
-			justify-content: center;
-		}
-		.objective-div{
-			align-items: center;
-			
-			justify-content: center;
-		}
-		.con-div, img.div {
-			margin: 50px;
-		}
+  /*display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;*/
+  display: flex;
+  justify-content: center;
+}
+
+.highlights-events h1:not(.highlights-h1-tag) {
+  display: none;
+}
+.highlights-events h1:(#arrow) {
+  display: block;
+}
+/*b*/
+.highlights-events-b img:not(.highlights-events-img) {
+  display: none;
+}
+
+/*.highlights-events img:not(.highlights-h1-tag) {
+  display: none;
+}*/
+.highlights-events-b{
+	
+  /*display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;*/
+  display: flex;
+  justify-content: center;
+}
+
+.highlights-events-b h1:not(.highlights-h1-tag) {
+  display: none;
+}
+.highlights-events-b h1:(#arrow) {
+  display: block;
+}
+.right-div img:not(.carousel-top-index) {
+  display: none;
+}
+.carousel-top-index{
+	width:500px;
+	height: 368px;
+}
+/*drop down*/
+/* hide the dropdown menu by default */
+.drop-down {
+  display: none;
+}
+
+/* show the dropdown menu when the parent list item is hovered over */
+.support:hover .drop-down {
+  display: block;
+}
+
+/* style the dropdown menu items */
+.drop-down li {
+  display: block;
+  background-color: #fff;
+}
+
+.drop-down li a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.drop-down li:hover {
+  background-color: #f1f1f1;
+}
+.hamburger{
+	font-size: 2rem;
+	display: none;
+}
+
+@media screen and (max-width: 700px) {
+	.nav-bar{
+		display: none;
+	}
+   .hamburger{
+   	display: block;
+   	margin-top:8px;
+   	margin-left:4px;
+   }
+   .nav-sec{
+   	display:flex;
+   	flex-direction:row;
+
+   }
+   .navi{
+   	display:flex;
+   	flex-direction: column;
+   	width: 30%
+   	height:30%;
+   	margin-top: 3rem;
+   	margin-left: -12rem;
+   }
+footer{
+	display: flex;
+	flex-direction: column;
+}
+   .section1{
+   	display: flex;
+   	flex-direction: column;
+   }  
+}
+   
+}
+
+	

@@ -6,6 +6,7 @@
 	<title>Our Website</title>
 	<link rel="icon" type="image/x-icon" href="logo.png">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="style.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
 
@@ -49,15 +50,18 @@
 			font-size: 28px;
 			text-align: center;
 		}
+		
 	</style>
 </head>
 <body>
 	<header>
 		<ul class="nav-sec">
+			<li class="hamburger">&#9776;</li>
 			<li class="logo">Ninja Rescuers</li>
+		
 			<li class="nav-bar">
 				<nav>
-					<ul>
+					<ul class="navi">
 						<li class="nav-menu">
 							<a class="nav-a" href="index.html">Home</a>
 						</li>
@@ -70,10 +74,8 @@
 						<li class="support">
 							<a class="nav-a" href="support.html">Support</a>
 							<ul class="drop-down">
-								<li><a href="#">Link</a></li>
-								<li><a href="#">Link</a></li>
-								<li><a href="#">Link</a></li>
-								<li><a href="#">Link</a></li>
+								<li><a href="support.html#support-section-1">Donate Now</a></li>
+								<li><a href="support.html#support-section-3">Volunteer</a></li>
 							</ul>
 						</li>
 						<li class="nav-menu">
@@ -87,7 +89,7 @@
 
 	<section class="contact-section-1">
 			<div style="margin: 50px;">
-				<h1 class="center-h1"><img class="contact-img-1" src="street-children.jpg"/></h1>
+				<img class="contact-img-1" src="street-children.jpg"/>
 			</div>
 			<div class="div-contact-2" style="margin: 50px;">
 				<h3 class="h1-tag"> Contact us</h3>
@@ -127,12 +129,12 @@
 			</div>
 		</div>
 		<div>
-			<form action="mailto:aadarsha.shahi.1000@gmail.com" method="post" enctype="text/plain" class="contact-form">
+			<form class="contact-form">
 				<input class="form-input-box" type="text" name="fullName" placeholder="Enter your fullname" /><br/>
 				<input class="form-input-box" type="text" name="email" placeholder="Enter your Email"><br/>
 				<input class="form-input-box"type="text" name="phoneNumber" placeholder="Enter your phone number"/><br/>
 				<textarea class="form-message-box" type="text" name="message" style="height: 200px;" placeholder="Write your message"></textarea><br/>
-				<input style="width: 200px;"class="submit" name="submit" type="submit" value="Submit">
+				<button style="width: 200px;"class="submit" name="submit" type="submit">Submit</button>
 			</form>
 		</div>
 	</section>

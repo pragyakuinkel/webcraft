@@ -6,16 +6,19 @@
 	<title>Ninja Rescuers</title>
 	<link rel="icon" type="image/x-icon" href="logo.png">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="style.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="event.css"/>
 </head>
 <body>
 	<header>
 		<ul class="nav-sec">
+			<li class="hamburger">&#9776;</li>
 			<li class="logo">Ninja Rescuers</li>
+		
 			<li class="nav-bar">
 				<nav>
-					<ul>
+					<ul class="navi">
 						<li class="nav-menu">
 							<a class="nav-a" href="index.html">Home</a>
 						</li>
@@ -28,10 +31,8 @@
 						<li class="support">
 							<a class="nav-a" href="support.html">Support</a>
 							<ul class="drop-down">
-								<li><a href="#">Link</a></li>
-								<li><a href="#">Link</a></li>
-								<li><a href="#">Link</a></li>
-								<li><a href="#">Link</a></li>
+								<li><a href="support.html#support-section-1">Donate Now</a></li>
+								<li><a href="support.html#support-section-3">Volunteer</a></li>
 							</ul>
 						</li>
 						<li class="nav-menu">
@@ -43,7 +44,7 @@
 		</ul>
 	</header>
 	<!--this is the  section 1-->
-	<section style="display: grid; grid-template-columns: auto auto; border: none;" class="top-content bground">
+	<section style="margin-bottom: 0;" class="top-content bground">
 		<!--this space is for content-->
 		<div class="con-div">
 		<h2 style="font-size: 28px;" class="text bground" >
@@ -172,7 +173,7 @@
 			<p>Please enter your email and click subscribe</p>
 			<div class="newsletter">
 				<input class="text-box" type="email"/>
-				<button class="go-button" type="submit"><i class="fas fa-paper-plane"></i></button>
+				<button class="go-button" type="submit" style="color: white; font-weight: bold; font-size: 24px;"><i class="fa fa-paper-plane-o"></i></button>
 			</div>	
 		</div>
 		<div class="footer">
@@ -183,15 +184,13 @@
 				<li>Projects</li>
 			</ul>
 		</div>
-		<div class="footer">
-		<div style="float: right; align-item: right;">	
+		<div class="footer">	
 			<h3>Contact Info:</h3>
 			<ul>
 				<li>Address: Boudha 06, Street 32, Kathmandu, Kathmandu, Bagmati Provience, Nepal 44602</li><br/>
 				<li>Phone: +977 9856436360, 9852596166</li><br/>
 				<li> Email: info@website.org.np</li>
-			</ul>
-			</div>			
+			</ul>			
 		</div>
 	</footer>
 </body>

@@ -6,6 +6,7 @@
 	<title>Ninja Rescuers</title>
 	<link rel="icon" type="image/x-icon" href="logo.png">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="style.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--- internal css starts here -->
 	<style type="text/css">
@@ -68,19 +69,17 @@
             text-align: center;
             border: none;
         }
-
-
-
 	</style>
-	<script src="style.js"></script>
 </head>
 <body>
 	<header>
 		<ul class="nav-sec">
+			<li class="hamburger">&#9776;</li>
 			<li class="logo">Ninja Rescuers</li>
+		
 			<li class="nav-bar">
 				<nav>
-					<ul>
+					<ul class="navi">
 						<li class="nav-menu">
 							<a class="nav-a" href="index.html">Home</a>
 						</li>
@@ -93,10 +92,8 @@
 						<li class="support">
 							<a class="nav-a" href="support.html">Support</a>
 							<ul class="drop-down">
-								<li><a href="#">Link</a></li>
-								<li><a href="#">Link</a></li>
-								<li><a href="#">Link</a></li>
-								<li><a href="#">Link</a></li>
+								<li><a href="support.html#support-section-1">Donate Now</a></li>
+								<li><a href="support.html#support-section-3">Volunteer</a></li>
 							</ul>
 						</li>
 						<li class="nav-menu">
@@ -112,11 +109,13 @@
 		<div class="left-div">
 			<h1 class="h1-tag">We stand together for child right</h1>
 			<p class="p-tag">Your small support can make big changes in children life.</p>
-			<a style="text-align: center;" href="support.html"/><button class="donate-button" type="submit">Donate</button></a>
-			<h1 style="text-align: center; "><a href="index.html" class="hotline-number"><i class="fa fa-phone"></i>9818981898</a><p style="font-size: 18px;">(Hotline Number)</h1>
+			<a href="support.html" href="#section2" /><button style="margin-left: 150px;" class="donate-button" type="submit">Donate</button></a>
+			<h1 style="text-align: center; "><a href="index.html" class="hotline-number"><i class="fa fa-phone"></i>9818981898</a><p style="margin-top: 0; margin-left: 50px; font-size: 18px;">(Hotline Number)</h1>
 		</div>
 		<div class="right-div">
-			<img class="carousel-top-index" src="street-children.jpg"/>
+			<img class="carousel-top-index" src="street-children.jpg" />
+            <img src="b.jpg"/>
+			<img src="c.jpg"/>
 		</div>
 	</section>
 	<section class="section-2" style="background-color: #aedadd">
@@ -125,36 +124,30 @@
 			<h1 style="text-align: center; font-size: 28px;">On Going Events</h1>
 			<ul class="highlights-events">
 				<li class="highlights-events-list">
-					<a href="explainevent.html"><h1 class="center-h1"><img class="highlights-events-img" src="street-children.jpg"/></h1>
-					<h1 class="highlights-h1-tag">Door to Door Awareness Program</h1>
-				</a></li>
-				<li class="highlights-events-list">
-					<a href="explainevent.html"><h1 class="center-h1"><img class="highlights-events-img" src="street-children.jpg"/></h1>
-					<h1 class="highlights-h1-tag">Speech Contest About Child Trafficking</h1>
-				</a></li>
-				<li class="highlights-events-list">
-					<a href="explainevent.html"><h1 class="center-h1"><img class="highlights-events-img" src="street-children.jpg"/></h1>
-					<h1 class="highlights-h1-tag">Door to Door Awareness Program</h1>
-				</a></li>
+					<a href="explainevent.html"><img  src="street-children.jpg" class="highlights-events-img"/>
+						<img src="b.jpg"/>
+						<img src="c.jpg"/>
+					<h1 class="highlights-h1-tag">Door to Door Awareness Program</h1>	
+					<h1>Speech Contest About Child Trafficking</h1>
+					<h1>Door to Door Awareness Program</h1>
+				</a>
+			<div><h1 id="arrow" onclick="changeImageAndText()">&rarr;</h1></div></li>
 			</ul>
 		</div>
 	</section>
 	<section style="background-color: #e3f6f5; padding: 50px;">
-		<div>
+		<div >
 			<h1 style="text-align: center; font-size: 28px;">Up Coming Events</h1>
-			<ul class="highlights-events">
-				<li class="highlights-events-list"><a href="explainevent.html">
-					<h1 class="center-h1"><img class="highlights-events-img" src="street-children.jpg"/></h1>
+			<ul class="highlights-events-b">
+				<li class="highlights-events-list-b"><a href="explainevent.html">
+					<img class="highlights-events-img" src="street-children.jpg"/>
+					<img  src="b.jpg"/>
+					<img  src="c.jpg"/>
 					<h1 class="highlights-h1-tag">Door to Door Awareness Program</h1>
-				</a></li>
-				<li class="highlights-events-list"><a href="explainevent.html">
-					<h1 class="center-h1"><img class="highlights-events-img" src="street-children.jpg"/></h1>
-					<h1 class="highlights-h1-tag">Speech Contest About Child Trafficking</h1>
-				</a></li>
-				<li class="highlights-events-list"><a href="explainevent.html">
-					<h1 class="center-h1"><img class="highlights-events-img" src="street-children.jpg"/></h1>
-					<h1 class="highlights-h1-tag">Door to Door Awareness Program</h1>
-				</a></li>
+					<h1 >Speech Contest About Child Trafficking</h1>
+					<h1 >Door to Door Awareness Program</h1>
+				</a>
+				<div><h1 id="arrow2" onclick="changeImagesAndTexts()">&rarr;</h1></div></li>
 			</ul>			
 		</div>
 	</section>
@@ -202,8 +195,8 @@
 			<h3>Newsletter Sign Up</h3>
 			<p>Please enter your email and click subscribe</p>
 			<div class="newsletter">
-					<input class="text-box" type="email"/>
-					<button class="go-button" type="submit" style="color: white; font-weight: bold; font-size: 24px;"><i class="fa fa-paper-plane-o"></i></button>
+				<input class="text-box" type="email"/>
+				<button class="go-button" type="submit" style="color: white; font-weight: bold; font-size: 24px;"><i class="fa fa-paper-plane-o"></i></button>
 			</div>	
 		</div>
 		<div class="footer">
